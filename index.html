@@ -22,33 +22,63 @@
           /* SOCIAL STYLES */
           .social-link {
             background: rgba(150, 150, 150, 0.5);
-            color: blue;
+            border-radius: 99px;
+            box-sizing: border-box;
+            color: #fff;
             display: inline-block;
-            height: 36px;
+            font-family: helvetica, arial, sans;
+            font-size: 1rem;
+            font-weight: bold;
+            height: 2.5em;
+            line-height: 1;
+            padding-top: 0.85em;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            width: 2.5em;
+          }
+          .social-list {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+          }
+          .social-list > li {
+            display: inline-block;
+            margin: 0 0.5em;
           }
 
           /* BIO STYLES */
           .bio-wrapper {
             font-size: 24px;
+            margin: 0 auto 40px;
+            overflow: hidden;
           }
-          .bio-wrapper:after {
+          <!-- .bio-wrapper:after {
           visibility: hidden;
           display: block;
           font-size: 0;
           content: " ";
           clear: both;
           height: 0;
-          }
+          } -->
           .bio-box {
             border: 1px solid black;
             box-sizing: border-box;
             float: left;
             font-size: 1rem;
+            margin: 40px 1% 0;
             padding: 2%;
-            width: 25%;
+            width: 23%;
           }
           .bio-box h3 {
+            color: #000;
             font-size: 1.5em;
+            margin: -40px 0 1em;
+            text-align: center;
+          }
+          .bio-box img {
+            width: 100px;
+            margin: auto;
           }
           .bio-copy {
             font-size: 1em;
@@ -56,20 +86,21 @@
           .bio-copy a {
             color: green;
           }
+
     </style>
   </head>
 <body>
   <div class="full-hero hero-home">
     <h1>I'm an h1</h1>
-    <ul>
+    <ul class="social-list">
       <li>
-        <a href="https://example.com" class="social-link show">Link</a>
+        <a href="https://example.com" class="social-link show">FB</a>
       </li>
       <li>
-        <a href="https://example.com" class="social-link show">Link</a>
+        <a href="https://example.com" class="social-link show">Tw</a>
       </li>
       <li>
-        <a href="https://example.com" class="social-link show">Link</a>
+        <a href="https://example.com" class="social-link show">GH</a>
       </li>
     </ul>
   </div>
@@ -77,8 +108,9 @@
 
     <div class="bio-wrapper">
       <div class="bio-box">
+        <img src="https://placekitten.com/g/400/400" alt="kitten">
         <h3>Michael Hartl</h3>
-        <a href="https://twitter.com/mhartl" class="social-link show">here</a>
+        <a href="https://twitter.com/mhartl" class="social-link">Tw</a>
         <div class="bio-copy">
           <p>
             Michael Hartl is the creator of the <a href="https://www.railstutorial.org/"> Ruby on Rails Tutorial</a> and principal author of the <a href="https://learnenough.com/">Learn Enough to Be Dangerous</a> introductory series.<br>
@@ -87,8 +119,9 @@
         </div>
       </div>
       <div class="bio-box">
+        <img src="https://placekitten.com/g/400/400" alt="kitten">
         <h3>Lee Donahoe</h3>
-        <a href="https:/twitter.com" class="social-link show">here</a>
+        <a href="https:/twitter.com" class="social-link">Tw</a>
         <div class="bio-copy">
           <p>
             Front-end development, writing some of the interface-related <a href="https://learnenough.com">Learn Enough</a> tutorials.
@@ -96,8 +129,9 @@
         </div>
       </div>
       <div class="bio-box">
+        <img src="https://placekitten.com/g/400/400" alt="kitten">
         <h3>Nick Merwin</h3>
-        <a href="https://twitter.com" class="social-link show">here</a>
+        <a href="https://twitter.com" class="social-link">Tw</a>
         <div class="bio-copy">
           <p>
             Also part of the <a href="https://learnenough.com">Learn Enough</a> tutorials founders.
@@ -105,8 +139,9 @@
         </div>
       </div>
       <div class="bio-box">
+        <img src="https://placekitten.com/g/400/400" alt="kitten">
         <h3>???</h3>
-        <a href="https://twitter.com" class="social-link show">here</a>
+        <a href="https://twitter.com" class="social-link">Tw</a>
         <div class="bio-copy">
           <p>
             The future.
@@ -114,7 +149,7 @@
         </div>
       </div>
     </div>
-    
+
     <p>
     Learn Enough to Be Dangerous is a leader in the movement to teach the
     world <em>technical sophistication</em>, which includes both "hard
