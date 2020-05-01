@@ -1,7 +1,7 @@
 ---
 layout: post
 title: this is the title of the post
-postHero: /images/kitten.jpg
+postHero: /images/shark.jpg
 author: Laura Stevenson
 authorTwitter: https://twitter.com/ottawacity
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
